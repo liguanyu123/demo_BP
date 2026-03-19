@@ -1,0 +1,41 @@
+{
+  "experiment_id": "20260316_034120",
+  "status": "SUCCESS",
+  "iterations": 4,
+  "llm_provider": "mock_reference",
+  "llm_model": "gpt-5-mini",
+  "used_reference_fallback": false,
+  "last_error": "",
+  "final_placement": [
+    {
+      "id": 1,
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": 3,
+      "x": 0,
+      "y": 220,
+      "z": 0
+    },
+    {
+      "id": 2,
+      "x": 0,
+      "y": 410,
+      "z": 0
+    },
+    {
+      "id": 4,
+      "x": 0,
+      "y": 570,
+      "z": 0
+    },
+    {
+      "id": 5,
+      "x": 0,
+      "y": 720,
+      "z": 0
+    }
+  ]
+}

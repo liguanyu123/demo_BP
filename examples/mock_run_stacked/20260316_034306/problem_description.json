@@ -1,0 +1,67 @@
+{
+  "P": "3D-BBP-STRICT",
+  "S": "Single-container 3D bin packing with strict physical feasibility. The solver must place all rectangular boxes into one fixed-size container while obeying conservative real-world static stability rules.",
+  "K": [
+    {
+      "name": "Boundary",
+      "description": "Every box must lie fully inside the container bounds."
+    },
+    {
+      "name": "Non-overlap",
+      "description": "No two axis-aligned boxes may overlap in 3D space."
+    },
+    {
+      "name": "Completeness",
+      "description": "Every input item must be placed exactly once."
+    },
+    {
+      "name": "AxisAligned",
+      "description": "Boxes are placed without rotation; use the given l, w, h as-is."
+    },
+    {
+      "name": "StrictSupport",
+      "description": "Any box with z > 0 must have its entire bottom footprint supported by coplanar top faces directly beneath it."
+    },
+    {
+      "name": "NoFloating",
+      "description": "Floating, hanging, bridging, or partially supported placements are invalid."
+    },
+    {
+      "name": "FragileNotLoadBearing",
+      "description": "Fragile boxes may not directly support another box."
+    }
+  ],
+  "X": [
+    "bin_size",
+    "items[item_id].l",
+    "items[item_id].w",
+    "items[item_id].h",
+    "items[item_id].fragile"
+  ],
+  "Y": "A complete placement list of dicts with keys id, x, y, z; each entry gives the lower-left-bottom coordinate of one placed box.",
+  "Z": "Primary objective: find a complete physically feasible packing. Secondary objective: prefer compact layouts with lower used height and smaller occupied bounding volume.",
+  "instance_summary": {
+    "bin_size": [
+      1000,
+      1000,
+      1000
+    ],
+    "num_items": 15,
+    "fragile_items": 3,
+    "non_fragile_items": 12
+  },
+  "signature": {
+    "problem_type": "3D-BBP-STRICT",
+    "bin_size": [
+      1000,
+      1000,
+      1000
+    ],
+    "num_items": 15,
+    "fragile_items": 3,
+    "axis_aligned": true,
+    "rotation_allowed": false,
+    "strict_support": true,
+    "fragile_not_load_bearing": true
+  }
+}

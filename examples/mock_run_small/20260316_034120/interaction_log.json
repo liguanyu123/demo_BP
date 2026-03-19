@@ -1,0 +1,96 @@
+[
+  {
+    "step": "problem_description_mock",
+    "payload": {
+      "description": {
+        "P": "3D-BBP-STRICT",
+        "S": "Single-container 3D bin packing with strict physical feasibility. The solver must place all rectangular boxes into one fixed-size container while obeying conservative real-world static stability rules.",
+        "K": [
+          {
+            "name": "Boundary",
+            "description": "Every box must lie fully inside the container bounds."
+          },
+          {
+            "name": "Non-overlap",
+            "description": "No two axis-aligned boxes may overlap in 3D space."
+          },
+          {
+            "name": "Completeness",
+            "description": "Every input item must be placed exactly once."
+          },
+          {
+            "name": "AxisAligned",
+            "description": "Boxes are placed without rotation; use the given l, w, h as-is."
+          },
+          {
+            "name": "StrictSupport",
+            "description": "Any box with z > 0 must have its entire bottom footprint supported by coplanar top faces directly beneath it."
+          },
+          {
+            "name": "NoFloating",
+            "description": "Floating, hanging, bridging, or partially supported placements are invalid."
+          },
+          {
+            "name": "FragileNotLoadBearing",
+            "description": "Fragile boxes may not directly support another box."
+          }
+        ],
+        "X": [
+          "bin_size",
+          "items[item_id].l",
+          "items[item_id].w",
+          "items[item_id].h",
+          "items[item_id].fragile"
+        ],
+        "Y": "A complete placement list of dicts with keys id, x, y, z; each entry gives the lower-left-bottom coordinate of one placed box.",
+        "Z": "Primary objective: find a complete physically feasible packing. Secondary objective: prefer compact layouts with lower used height and smaller occupied bounding volume.",
+        "instance_summary": {
+          "bin_size": [
+            1000,
+            1000,
+            1000
+          ],
+          "num_items": 5,
+          "fragile_items": 2,
+          "non_fragile_items": 3
+        },
+        "signature": {
+          "problem_type": "3D-BBP-STRICT",
+          "bin_size": [
+            1000,
+            1000,
+            1000
+          ],
+          "num_items": 5,
+          "fragile_items": 2,
+          "axis_aligned": true,
+          "rotation_allowed": false,
+          "strict_support": true,
+          "fragile_not_load_bearing": true
+        }
+      },
+      "judge": {
+        "ok": true,
+        "issues": [],
+        "suggestions": []
+      }
+    }
+  },
+  {
+    "step": "solver_generate",
+    "payload": {
+      "prompt": "You are the Generation Agent (GA) for code generation.\n\nTask:\nWrite Python code for solve_packing(items, bin_size) for the following strict 3D bin packing problem.\nHowever, you MUST build on the provided trusted engine instead of reimplementing low-level physics.\n\nAvailable trusted imports:\nfrom trusted_solver import solve_with_policy\n\nYou MUST output Python code that defines exactly these callables:\n1. order_items(items)\n2. score_candidate(item_id, item, candidate, state, bin_size)\n3. solve_packing(items, bin_size)\n\nContract:\n- order_items(items) must return every item id exactly once.\n- score_candidate(...) must return a sortable Python value; lower is better.\n- candidate is a dict with keys:\n  id, x, y, z, support_ratio, support_area, support_ids, used_height_after, bbox_volume_after, footprint_area\n- state is a dict with keys: placement, used_height, bbox_volume\n- solve_packing(items, bin_size) must call solve_with_policy(items, bin_size, order_items, score_candidate)\n- Do NOT import any package except trusted_solver.\n- Do NOT attempt to re-check collision/support; the engine already enforces legality.\n- Prefer non-fragile items earlier and prefer lower, compact placements.\n\nProblem description:\nProblem Type: 3D-BBP-STRICT\nDescription: Single-container 3D bin packing with strict physical feasibility. The solver must place all rectangular boxes into one fixed-size container while obeying conservative real-world static stability rules.\nConstraints:\n  1. Boundary: Every box must lie fully inside the container bounds.\n  2. Non-overlap: No two axis-aligned boxes may overlap in 3D space.\n  3. Completeness: Every input item must be placed exactly once.\n  4. AxisAligned: Boxes are placed without rotation; use the given l, w, h as-is.\n  5. StrictSupport: Any box with z > 0 must have its entire bottom footprint supported by coplanar top faces directly beneath it.\n  6. NoFloating: Floating, hanging, bridging, or partially supported placements are invalid.\n  7. FragileNotLoadBearing: Fragile boxes may not directly support another box.\nInput: ['bin_size', 'items[item_id].l', 'items[item_id].w', 'items[item_id].h', 'items[item_id].fragile']\nOutput: A complete placement list of dicts with keys id, x, y, z; each entry gives the lower-left-bottom coordinate of one placed box.\nObjective: Primary objective: find a complete physically feasible packing. Secondary objective: prefer compact layouts with lower used height and smaller occupied bounding volume.\nInstance Summary: {'bin_size': [1000, 1000, 1000], 'num_items': 5, 'fragile_items': 2, 'non_fragile_items': 3}",
+      "response": "from trusted_solver import solve_with_policy\n\n\ndef order_items(items):\n    def rank(entry):\n        item_id, item = entry\n        return (\n            1 if item['fragile'] else 0,\n            -(item['l'] * item['w']),\n            -(item['l'] * item['w'] * item['h']),\n            -item['h'],\n            item_id,\n        )\n    return [item_id for item_id, _ in sorted(items.items(), key=rank)]\n\n\ndef score_candidate(item_id, item, candidate, state, bin_size):\n    return (\n        candidate['z'],\n        candidate['used_height_after'],\n        candidate['bbox_volume_after'],\n        candidate['y'],\n        candidate['x'],\n        -candidate['support_area'],\n        item_id,\n    )\n\n\ndef solve_packing(items, bin_size):\n    return solve_with_policy(items, bin_size, order_items, score_candidate)"
+    }
+  },
+  {
+    "step": "solver_judge",
+    "payload": {
+      "response": {
+        "ok": true,
+        "issues": [],
+        "suggestions": []
+      }
+    }
+  }
+]

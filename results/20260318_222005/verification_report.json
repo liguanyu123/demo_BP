@@ -1,0 +1,106 @@
+{
+  "bin_size": [
+    1000,
+    1000,
+    1000
+  ],
+  "num_items": 5,
+  "num_placements": 5,
+  "checks": {
+    "structure": true,
+    "completeness": true,
+    "uniqueness": true,
+    "bounds": true,
+    "overlap": true,
+    "support": true
+  },
+  "support_details": [
+    {
+      "id": 1,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 48400,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 3,
+      "x": 0,
+      "y": 220,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 39900,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 2,
+      "x": 0,
+      "y": 410,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 28800,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 4,
+      "x": 0,
+      "y": 570,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 22500,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 5,
+      "x": 0,
+      "y": 720,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 22400,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    }
+  ],
+  "placement": [
+    {
+      "id": 1,
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": 3,
+      "x": 0,
+      "y": 220,
+      "z": 0
+    },
+    {
+      "id": 2,
+      "x": 0,
+      "y": 410,
+      "z": 0
+    },
+    {
+      "id": 4,
+      "x": 0,
+      "y": 570,
+      "z": 0
+    },
+    {
+      "id": 5,
+      "x": 0,
+      "y": 720,
+      "z": 0
+    }
+  ]
+}

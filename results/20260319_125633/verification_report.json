@@ -1,0 +1,460 @@
+{
+  "bin_size": [
+    1000,
+    1000,
+    1000
+  ],
+  "num_items": 25,
+  "num_placements": 25,
+  "checks": {
+    "structure": true,
+    "completeness": true,
+    "uniqueness": true,
+    "bounds": true,
+    "overlap": true,
+    "support": true
+  },
+  "support_details": [
+    {
+      "id": 12,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 68796,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 21,
+      "x": 234,
+      "y": 0,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 68547,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 18,
+      "x": 453,
+      "y": 0,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 65905,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 15,
+      "x": 722,
+      "y": 0,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 57942,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 6,
+      "x": 453,
+      "y": 245,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 55470,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 1,
+      "x": 711,
+      "y": 261,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 54033,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 23,
+      "x": 0,
+      "y": 294,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 51726,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 4,
+      "x": 233,
+      "y": 313,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 47053,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 22,
+      "x": 444,
+      "y": 460,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 46240,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 13,
+      "x": 604,
+      "y": 510,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 40077,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 9,
+      "x": 787,
+      "y": 510,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 39758,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 19,
+      "x": 0,
+      "y": 516,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 42075,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 7,
+      "x": 225,
+      "y": 536,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 40512,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 2,
+      "x": 0,
+      "y": 703,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 38896,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 24,
+      "x": 787,
+      "y": 716,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 35490,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 5,
+      "x": 176,
+      "y": 728,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 36134,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 16,
+      "x": 604,
+      "y": 729,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 32319,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 8,
+      "x": 379,
+      "y": 749,
+      "z": 0,
+      "support_ratio": 1.0,
+      "support_area": 35175,
+      "support_ids": [],
+      "center_supported": true,
+      "reason": "supported_by_floor"
+    },
+    {
+      "id": 25,
+      "x": 0,
+      "y": 703,
+      "z": 144,
+      "support_ratio": 1.0,
+      "support_area": 32039.0,
+      "support_ids": [
+        2
+      ],
+      "center_supported": true,
+      "reason": "supported"
+    },
+    {
+      "id": 3,
+      "x": 233,
+      "y": 313,
+      "z": 161,
+      "support_ratio": 1.0,
+      "support_area": 28840.0,
+      "support_ids": [
+        4
+      ],
+      "center_supported": true,
+      "reason": "supported"
+    },
+    {
+      "id": 10,
+      "x": 604,
+      "y": 729,
+      "z": 167,
+      "support_ratio": 1.0,
+      "support_area": 25718.0,
+      "support_ids": [
+        16
+      ],
+      "center_supported": true,
+      "reason": "supported"
+    },
+    {
+      "id": 14,
+      "x": 453,
+      "y": 245,
+      "z": 173,
+      "support_ratio": 1.0,
+      "support_area": 27664.0,
+      "support_ids": [
+        6
+      ],
+      "center_supported": true,
+      "reason": "supported"
+    },
+    {
+      "id": 20,
+      "x": 453,
+      "y": 0,
+      "z": 176,
+      "support_ratio": 1.0,
+      "support_area": 26815.0,
+      "support_ids": [
+        18
+      ],
+      "center_supported": true,
+      "reason": "supported"
+    },
+    {
+      "id": 17,
+      "x": 234,
+      "y": 0,
+      "z": 183,
+      "support_ratio": 1.0,
+      "support_area": 24734.0,
+      "support_ids": [
+        21
+      ],
+      "center_supported": true,
+      "reason": "supported"
+    },
+    {
+      "id": 11,
+      "x": 604,
+      "y": 510,
+      "z": 192,
+      "support_ratio": 1.0,
+      "support_area": 22500.0,
+      "support_ids": [
+        13
+      ],
+      "center_supported": true,
+      "reason": "supported"
+    }
+  ],
+  "placement": [
+    {
+      "id": 12,
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": 21,
+      "x": 234,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": 18,
+      "x": 453,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": 15,
+      "x": 722,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": 6,
+      "x": 453,
+      "y": 245,
+      "z": 0
+    },
+    {
+      "id": 1,
+      "x": 711,
+      "y": 261,
+      "z": 0
+    },
+    {
+      "id": 23,
+      "x": 0,
+      "y": 294,
+      "z": 0
+    },
+    {
+      "id": 4,
+      "x": 233,
+      "y": 313,
+      "z": 0
+    },
+    {
+      "id": 22,
+      "x": 444,
+      "y": 460,
+      "z": 0
+    },
+    {
+      "id": 13,
+      "x": 604,
+      "y": 510,
+      "z": 0
+    },
+    {
+      "id": 9,
+      "x": 787,
+      "y": 510,
+      "z": 0
+    },
+    {
+      "id": 19,
+      "x": 0,
+      "y": 516,
+      "z": 0
+    },
+    {
+      "id": 7,
+      "x": 225,
+      "y": 536,
+      "z": 0
+    },
+    {
+      "id": 2,
+      "x": 0,
+      "y": 703,
+      "z": 0
+    },
+    {
+      "id": 24,
+      "x": 787,
+      "y": 716,
+      "z": 0
+    },
+    {
+      "id": 5,
+      "x": 176,
+      "y": 728,
+      "z": 0
+    },
+    {
+      "id": 16,
+      "x": 604,
+      "y": 729,
+      "z": 0
+    },
+    {
+      "id": 8,
+      "x": 379,
+      "y": 749,
+      "z": 0
+    },
+    {
+      "id": 25,
+      "x": 0,
+      "y": 703,
+      "z": 144
+    },
+    {
+      "id": 3,
+      "x": 233,
+      "y": 313,
+      "z": 161
+    },
+    {
+      "id": 10,
+      "x": 604,
+      "y": 729,
+      "z": 167
+    },
+    {
+      "id": 14,
+      "x": 453,
+      "y": 245,
+      "z": 173
+    },
+    {
+      "id": 20,
+      "x": 453,
+      "y": 0,
+      "z": 176
+    },
+    {
+      "id": 17,
+      "x": 234,
+      "y": 0,
+      "z": 183
+    },
+    {
+      "id": 11,
+      "x": 604,
+      "y": 510,
+      "z": 192
+    }
+  ]
+}

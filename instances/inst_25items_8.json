@@ -1,0 +1,173 @@
+{
+  "bin_size": [
+    1000,
+    1000,
+    1000
+  ],
+  "items": {
+    "1": {
+      "l": 205,
+      "w": 222,
+      "h": 260,
+      "fragile": false
+    },
+    "2": {
+      "l": 162,
+      "w": 176,
+      "h": 194,
+      "fragile": false
+    },
+    "3": {
+      "l": 132,
+      "w": 167,
+      "h": 206,
+      "fragile": false
+    },
+    "4": {
+      "l": 204,
+      "w": 288,
+      "h": 192,
+      "fragile": false
+    },
+    "5": {
+      "l": 171,
+      "w": 242,
+      "h": 155,
+      "fragile": false
+    },
+    "6": {
+      "l": 124,
+      "w": 220,
+      "h": 210,
+      "fragile": false
+    },
+    "7": {
+      "l": 215,
+      "w": 222,
+      "h": 194,
+      "fragile": false
+    },
+    "8": {
+      "l": 163,
+      "w": 180,
+      "h": 247,
+      "fragile": false
+    },
+    "9": {
+      "l": 147,
+      "w": 163,
+      "h": 298,
+      "fragile": true
+    },
+    "10": {
+      "l": 286,
+      "w": 234,
+      "h": 230,
+      "fragile": false
+    },
+    "11": {
+      "l": 252,
+      "w": 195,
+      "h": 148,
+      "fragile": false
+    },
+    "12": {
+      "l": 242,
+      "w": 234,
+      "h": 120,
+      "fragile": false
+    },
+    "13": {
+      "l": 221,
+      "w": 180,
+      "h": 223,
+      "fragile": false
+    },
+    "14": {
+      "l": 188,
+      "w": 165,
+      "h": 240,
+      "fragile": false
+    },
+    "15": {
+      "l": 294,
+      "w": 222,
+      "h": 162,
+      "fragile": false
+    },
+    "16": {
+      "l": 246,
+      "w": 211,
+      "h": 177,
+      "fragile": true
+    },
+    "17": {
+      "l": 285,
+      "w": 289,
+      "h": 231,
+      "fragile": false
+    },
+    "18": {
+      "l": 259,
+      "w": 209,
+      "h": 255,
+      "fragile": false
+    },
+    "19": {
+      "l": 244,
+      "w": 183,
+      "h": 260,
+      "fragile": false
+    },
+    "20": {
+      "l": 226,
+      "w": 191,
+      "h": 144,
+      "fragile": false
+    },
+    "21": {
+      "l": 183,
+      "w": 160,
+      "h": 126,
+      "fragile": false
+    },
+    "22": {
+      "l": 136,
+      "w": 156,
+      "h": 127,
+      "fragile": false
+    },
+    "23": {
+      "l": 278,
+      "w": 243,
+      "h": 250,
+      "fragile": false
+    },
+    "24": {
+      "l": 211,
+      "w": 235,
+      "h": 232,
+      "fragile": false
+    },
+    "25": {
+      "l": 161,
+      "w": 182,
+      "h": 144,
+      "fragile": false
+    }
+  },
+  "meta": {
+    "num_items": 25,
+    "fragile_ratio": 0.35,
+    "seed": 48,
+    "target_utilization": 0.7,
+    "actual_utilization": 0.224163046,
+    "generator": "constructive_grid_stacks",
+    "guaranteed_feasible_layout_exists": true,
+    "grid": {
+      "cols": 3,
+      "rows": 3,
+      "slots": 9
+    }
+  }
+}

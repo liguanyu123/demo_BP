@@ -1,0 +1,197 @@
+{
+  "bin_size": [
+    1000,
+    1000,
+    1000
+  ],
+  "items": {
+    "1": {
+      "l": 200,
+      "w": 500,
+      "h": 320,
+      "fragile": false
+    },
+    "2": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "3": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": true
+    },
+    "4": {
+      "l": 200,
+      "w": 500,
+      "h": 320,
+      "fragile": false
+    },
+    "5": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "6": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": true
+    },
+    "7": {
+      "l": 200,
+      "w": 500,
+      "h": 320,
+      "fragile": false
+    },
+    "8": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "9": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": true
+    },
+    "10": {
+      "l": 200,
+      "w": 500,
+      "h": 320,
+      "fragile": false
+    },
+    "11": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "12": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": true
+    },
+    "13": {
+      "l": 200,
+      "w": 500,
+      "h": 320,
+      "fragile": false
+    },
+    "14": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "15": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": true
+    },
+    "16": {
+      "l": 200,
+      "w": 500,
+      "h": 320,
+      "fragile": false
+    },
+    "17": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "18": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "19": {
+      "l": 200,
+      "w": 500,
+      "h": 320,
+      "fragile": false
+    },
+    "20": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "21": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "22": {
+      "l": 200,
+      "w": 500,
+      "h": 320,
+      "fragile": false
+    },
+    "23": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "24": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "25": {
+      "l": 200,
+      "w": 500,
+      "h": 320,
+      "fragile": false
+    },
+    "26": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "27": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "28": {
+      "l": 200,
+      "w": 500,
+      "h": 320,
+      "fragile": false
+    },
+    "29": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    },
+    "30": {
+      "l": 200,
+      "w": 500,
+      "h": 315,
+      "fragile": false
+    }
+  },
+  "meta": {
+    "num_items": 30,
+    "fragile_count": 5,
+    "target_utilization": 0.95,
+    "actual_utilization": 0.95,
+    "generator": "manual_full_floor_stacks_95pct",
+    "notes": "10 floor cells of 200x500 fully tile the base; each stack height is 950mm. Top items in 5 stacks are fragile, so fragile items never support any other box."
+  }
+}

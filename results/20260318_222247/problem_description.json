@@ -1,0 +1,56 @@
+{
+  "P": "3D Bin Packing with Fragile Items",
+  "S": "Pack 25 rectangular boxes into a single 1000x1000x1000 bin, respecting physical constraints including support requirements for fragile items.",
+  "K": [
+    {
+      "name": "No Overlap",
+      "description": "Items cannot intersect in 3D space."
+    },
+    {
+      "name": "Bin Boundaries",
+      "description": "All items must be fully contained within the 1000x1000x1000 bin dimensions."
+    },
+    {
+      "name": "No Floating",
+      "description": "Each item must have full support from either the bin floor or other items below it."
+    },
+    {
+      "name": "No Partial Support",
+      "description": "Items must be fully supported across their entire bottom surface area."
+    },
+    {
+      "name": "Fragile Item Support",
+      "description": "Fragile items (4 of 25) cannot be directly supported by other items; they must rest on the bin floor."
+    }
+  ],
+  "X": [
+    "bin_size: [1000, 1000, 1000]",
+    "items: array of 25 objects, each with keys l, w, h, fragile"
+  ],
+  "Y": "A packing configuration specifying the 3D position (x, y, z) for each item within the bin, with all constraints satisfied.",
+  "Z": "Maximize the number of items packed into the single bin while satisfying all physical constraints.",
+  "instance_summary": {
+    "bin_size": [
+      1000,
+      1000,
+      1000
+    ],
+    "num_items": 25,
+    "fragile_items": 4,
+    "non_fragile_items": 21
+  },
+  "signature": {
+    "problem_type": "3D-BBP-STRICT",
+    "bin_size": [
+      1000,
+      1000,
+      1000
+    ],
+    "num_items": 25,
+    "fragile_items": 4,
+    "axis_aligned": true,
+    "rotation_allowed": false,
+    "strict_support": true,
+    "fragile_not_load_bearing": true
+  }
+}
